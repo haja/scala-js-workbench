@@ -39,7 +39,7 @@ lazy val root = project.in(file("."))
       (fullOptJS in (client, Compile)).value
       (artifactPath in (client, Compile, fullOptJS)).value
     },
-    addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.1.0"),
+    addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.5.1"),
     libraryDependencies ++= Seq(
       Dependencies.akkaHttp,
       Dependencies.akka,
